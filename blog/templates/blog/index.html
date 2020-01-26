@@ -4,7 +4,7 @@
     <div class="card m-2 p-3">
     <h1 class="card-title">{{post.title}}</h1>
     <p class="card-content"><p>{{post.content}}</p>
-    <p class="subtitle">By {{post.author}} on {{post.date_posted}}</p>
+    <p class="subtitle">By {{post.author}} on {{post.date_posted | date}}</p>
 </div>
   {% endfor %}
 {% endblock content %}
